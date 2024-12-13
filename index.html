@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Qr Genrater</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="main">
-            <h1 class="title">Qr Generater</h1>
-            <div class="action">
-            <input type="text" placeholder="Enter any data or URL">
-            <button>Genrate QR</button>
+      <div class="main">
+        <h1 class="title">Qr Generater</h1>
+        <div class="action">
+          <input type="text" placeholder="Enter any data or URL" />
+          <button>Genrate QR</button>
         </div>
         <div class="qr-box">
-            <img id="qr-img" alt="QR Code">
+          <!-- <img id="qr-img" alt="QR Code" /> -->
         </div>
+        <a id="downloadBtn" download="QR-Code.jpg" href="">Download</a>
     </div>
-</div>
+    </div>
     <script src="script.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js"></script>
+  </body>
 </html>
